@@ -3,7 +3,7 @@ const app = express();
 __path = process.cwd()
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
-let server = require('./giftedqr'),
+let server = require('./giftqr'),
     code = require('./giftpair');
 require('events').EventEmitter.defaultMaxListeners = 500;
 app.use('/qr', server);
