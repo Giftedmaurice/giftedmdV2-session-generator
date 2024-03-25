@@ -11,11 +11,9 @@
   "author": "GiftedTech",
   "license": "MIT",
   "dependencies": {
-    "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^6.5.0",
     "maher-zubair-baileys": "^6.6.5",
     "qrcode": "latest",
-    "fs-extra": "latest",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
     "phone" : "3.1.30",
