@@ -14,7 +14,7 @@ const {
 
 function removeFile(FilePath){
     if(!fs.existsSync(FilePath)) return false;
-    fs.rmSync(FilePath, { recursive: true, force: false })
+    fs.rmSync(FilePath, { recursive: true, force: true })
  };
 router.get('/', async (req, res) => {
     const id = makeid();
@@ -82,7 +82,7 @@ Don't Forget To Give Star⭐ To My Repo`
  
 
         await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
+        await Pair_Code_By_Gifted_Tech.ws.closed();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
