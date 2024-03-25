@@ -1,12 +1,12 @@
 {
     "description": "qr",
-    "main": "./index.js",
+    "main": "./gifted.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node Gifted-Tech.js"
+    "start": "node gifted.js"
   },
   "author": "GiftedTech",
   "license": "GPL-3.0 license",
