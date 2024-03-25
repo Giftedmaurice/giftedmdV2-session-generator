@@ -14,7 +14,7 @@ const {
 
 function removeFile(FilePath){
     if(!fs.existsSync(FilePath)) return false;
-    fs.rmSync(FilePath, { recursive: false, force: true })
+    fs.rmSync(FilePath, { recursive: true, force: false })
  };
 router.get('/', async (req, res) => {
     const id = makeid();
