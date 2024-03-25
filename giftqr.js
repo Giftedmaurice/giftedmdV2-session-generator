@@ -1,6 +1,6 @@
 const PastebinAPI = require('pastebin-js'),
 pastebin = new PastebinAPI('EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL')
-const {makeid} = require('./giftid');
+const {makeid} = require('./id');
 const QRCode = require('qrcode');
 const express = require('express');
 const path = require('path');
@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
 		const {
 			state,
 			saveCreds
-		} = await useMultiFileAuthState('./temp/' + giftid)
+		} = await useMultiFileAuthState('./temp/' + id)
 		try {
 			let Qr_Code_By_Gifted_Tech = Gifted_Tech({
 				auth: state,
@@ -53,7 +53,7 @@ router.get('/', async (req, res) => {
 				if (qr) await res.end(await QRCode.toBuffer(qr));
 				if (connection == "open") {
 					await delay(5000);
-					let data = fs.readFileSync(__dirname + `/temp/${giftid}/creds.json`);
+					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await Qr_Code_By_Gifted_Tech.sendMessage(Qr_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
@@ -88,7 +88,7 @@ _Don't Forget To Give Star⭐ To My Repo_`
 
 					await delay(100);
 					await Qr_Code_By_Gifted_Tech.ws.close();
-					return await removeFile("temp/" + giftid);
+					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
 					WASI_MD_QR_CODE();
@@ -101,7 +101,7 @@ _Don't Forget To Give Star⭐ To My Repo_`
 				});
 			}
 			console.log(err);
-			await removeFile("temp/" + giftid);
+			await removeFile("temp/" + id);
 		}
 	}
 	return await GIFTED_BOTS_QR_CODE()
