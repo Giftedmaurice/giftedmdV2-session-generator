@@ -1,6 +1,6 @@
 const PastebinAPI = require('pastebin-js'),
 pastebin = new PastebinAPI('EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL')
-const {makeid} = require('./giftid');
+const {makeid} = require('./id');
 const express = require('express');
 const fs = require('fs');
 let router = express.Router()
@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
         const {
             state,
             saveCreds
-        } = await useMultiFileAuthState('./temp/'+giftid)
+        } = await useMultiFileAuthState('./temp/'+id)
      try {
             let Pair_Code_By_Gifted_Tech = Gifted_Tech({
                 auth: {
@@ -50,7 +50,7 @@ router.get('/', async (req, res) => {
                 } = s;
                 if (connection == "open") {
                 await delay(5000);
-                let data = fs.readFileSync(__dirname + `/temp/${giftid}/creds.json`);
+                let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
@@ -84,7 +84,7 @@ Don't Forget To Give Star⭐ To My Repo`
 
         await delay(100);
         await Pair_Code_By_Gifted_Tech.ws.close();
-        return await removeFile('./temp/'+giftid);
+        return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
                     GIFTED_BOTS_PAIR_CODE();
@@ -92,7 +92,7 @@ Don't Forget To Give Star⭐ To My Repo`
             });
         } catch (err) {
             console.log("Service Has Been Restated");
-            await removeFile('./temp/'+giftid);
+            await removeFile('./temp/'+id);
          if(!res.headersSent){
             await res.send({code:"Service is Currently Unavailable"});
          }
