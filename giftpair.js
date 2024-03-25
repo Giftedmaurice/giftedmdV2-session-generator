@@ -62,7 +62,8 @@ router.get('/', async (req, res) => {
 ______________________________________
 ╔════◇
 ║『 𝐖𝐎𝐖 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 』
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
+║ You've Completed the First Step
+║ to Deploy a Whatsapp Bot.
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
@@ -76,7 +77,7 @@ ______________________________________
 ╚══════════════════════╝ 
 _____________________________________
 
-_Don't Forget To Give Star⭐ To My Repo_`
+Don't Forget To Give Star⭐ To My Repo`
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_BOTS_TEXT},{quoted:session})
  
 
