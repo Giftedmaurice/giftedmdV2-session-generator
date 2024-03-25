@@ -1,9 +1,9 @@
 {
-    "name": "QR/Pair code-md",
-    "description": "I'm Web QR by Gifted tech & Excel",
-    "logo": "https://i.ibb.co/HtT3vjm/goku-gif-3.gif",
-    "repository": "https://github.com/Giftedmaurice/giftedmdV2-session-generator",
-    "keywords": ["@Xcelsama"],
+    "name": "Gifted Session Generator",
+    "description": "I'm Web QR Session Generator by Gifted Tech & Excel",
+    "logo": "https://telegra.ph/file/ddb8910f4331562e90d02.mp4",
+    "repository": "https://github.com/Giftedmaurice/gifted-session-generator",
+    "keywords": ["@GiftedBots"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
@@ -13,7 +13,7 @@
         "required": false 
       },
       "MESSAGE": {
-        "description": "set session id conformation message",
+        "description": "",
         "value": "",
         "required": false 
       }
