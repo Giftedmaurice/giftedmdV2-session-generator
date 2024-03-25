@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8000;
 let server = require('./giftqr'),
     code = require('./giftpair');
 require('events').EventEmitter.defaultMaxListeners = 500;
-app.use('/qr', server);
+app.use('/giftqr', server);
 app.use('/code', code);
 app.use('/giftpair',async (req, res, next) => {
 res.sendFile(__path + '/giftpair.html')
