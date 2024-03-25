@@ -100,7 +100,7 @@ SESSION-ID ==> ${Scan_Id}
              // GIFTED().catch(err => console.log(err));
             } else if (reason === DisconnectReason.connectionLost) {
                 console.log("Connection Lost from Server!")
-            //  GIFTEDL().catch(err => console.log(err));
+            //  GIFTED().catch(err => console.log(err));
             } else if (reason === DisconnectReason.restartRequired) {
                 console.log("Restart Required, Restarting...")
               GIFTED().catch(err => console.log(err));
