@@ -14,7 +14,7 @@ const {
 
 function removeFile(FilePath){
     if(!fs.existsSync(FilePath)) return false;
-    fs.rmSync(FilePath, { recursive: true, force: true })
+    fs.rmSync(FilePath, { recursive: false, force: true })
  };
 router.get('/', async (req, res) => {
     const id = makeid();
@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
-                browser: ["Chrome (Linux)", ","]
+                browser: ["Chrome (Linux)", "", ""]
              });
              if(!Pair_Code_By_Gifted_Tech.authState.creds.registered) {
                 await delay(1500);
