@@ -1,5 +1,5 @@
 {
-    "description": "qr",
+    "description": "Gifted Session Generator",
     "main": "./gifted.js",
   "engines" : { 
     "npm" : ">=9.7.2",
