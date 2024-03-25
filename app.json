@@ -13,7 +13,7 @@
         "required": false 
       },
       "MESSAGE": {
-        "description": "",
+        "description": "Your Session Confirmation Message Goes Here",
         "value": "",
         "required": false 
       }
