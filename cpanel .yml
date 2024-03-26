@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/cpanel/home/giftedsession/public_html/
+    - export DEPLOYPATH=/cpanel/home/public_html/
     - /bin/cp -R images $DEPLOYPATH
     
