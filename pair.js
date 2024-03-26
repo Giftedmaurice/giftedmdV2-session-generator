@@ -57,23 +57,29 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-*_Pair Code Connected by Gifted Tech_*
-*_Made With 🤍_*
-______________________________________
+✅sᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ✅
+Made With 💜
+By DEXTER ᴛᴇᴄʜ💜
+____________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN GIFTED-MDv2 』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
-╚══════════════════════╝
+║『 𝐖𝐎𝐖 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 CYBER 𝐌𝐃 』
+║ You've Completed the First Step
+║ to Deploy a Whatsapp Bot.
+╚════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@giftedtechnexus_
-║❒ *Owner:* _https://wa.me/message/NHCZC5DSOEUXB1_
-║❒ *Repo:* _https://github.com/Giftedmaurice/gifted-mdV2_
-║❒ *WaGroup:* _https://chat.whatsapp.com/L0ctUUVLlsrFYwBHApKfew_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaJmfmTDJ6H7CmuBss0o_
-║❒ *Plugins:* _https://github.com/Giftedmaurice/gifted-bot-md-plugins_
-╚══════════════════════╝ 
-_____________________________________
+║❒ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞: https://youtube.com/@CYBERDEXTERTOOL?si=ZhTFMWjpThrCuuWj
+║❒ 𝐎𝐰𝐧𝐞𝐫: https://wa.me/message/RGC3NWYU6LWJJ1
+║❒ 𝐑𝐞𝐩𝐨: https://github.com/darkewing/DARK-EWING
+║❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/KGtgYAU9Qv14v5iU0qBUbV
+║❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: https://whatsapp.com/channel/0029VaOoODA65yDHLCqskX11
+║❒ 𝐏𝐥𝐮𝐠𝐢𝐧𝐬: https://github.com/darkewing/DARK-EWING
+║    💜💜💜
+╚════════════════════╝ 
+ ©²⁰²⁴ ᴳᴵᶠᵀᴱᴰ ᵂᴴᴬᵀˢᴬᴾᴾ ᴮᴼᵀˢ
+___________________________________
+
+Don't Forget To Give Star⭐ To My Repo
 
 _Don't Forget To Give Star To My Repo_`
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
